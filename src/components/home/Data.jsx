@@ -1,11 +1,17 @@
 import React from "react";
+import constants from "@/constants";
+import styles from './home.module.css';
 
-import styles from './home.module.css'
+const {
+  home_content: {
+    full_name, title, description, button_hello
+  }
+} = constants;
 
 const Data = () => (
   <div className={styles.home__data}>
     <h1 className={styles.home__title}>
-      John Smith
+      {full_name}
       <svg
         width="36"
         height="36"
@@ -56,12 +62,12 @@ const Data = () => (
         ></path>
       </svg>
     </h1>
-    <h3 className={styles.home__subtitle}>Software Developer</h3>
+    <h3 className={styles.home__subtitle}>{title}</h3>
     <p className={styles.home__description}>
-      Highly motivated Software Engineer with 4 years experience develop and maintain mobile and website application
+      {description}
     </p>
     <a href="#contact" className="button button__flex">
-      Say Hello
+      {button_hello}
       <svg
         class="button__icon"
         xmlns="http://www.w3.org/2000/svg"

@@ -1,18 +1,24 @@
 import React from "react";
-
+import constants from "@/constants";
 import styles from './home.module.css'
+
+const {
+  home_content: {
+    social_media
+  }
+} = constants;
 
 const Social = () => (
 	<div className={styles.home__social}>
-    <a href="https://www.instagram.com/" className={styles.home__social__icon} target="_blank">
-      <i className="uil uil-instagram" />
-    </a>
-    <a href="https://www.instagram.com/" className={styles.home__social__icon} target="_blank">
-      <i className="uil uil-instagram" />
-    </a>
-    <a href="https://www.instagram.com/" className={styles.home__social__icon} target="_blank">
-      <i className="uil uil-github-alt" />
-    </a>
+    {social_media.map((item, index) => (
+      <a
+        key={index}
+        href={item.link}
+        className={styles.home__social__icon} target="_blank"
+      >
+        <i className={`uil uil-${item.icon}`} />
+      </a>
+    ))}
   </div>
 )
 

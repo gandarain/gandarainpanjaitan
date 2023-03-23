@@ -1,8 +1,6 @@
 import React from "react";
-
 import Social from "./Social";
 import Data from "./Data";
-
 import styles from './home.module.css'
 
 const Home = () => (

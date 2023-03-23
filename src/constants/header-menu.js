@@ -1,4 +1,4 @@
-const name = "Ganda Rain Panjaitan"
+const name = "Gan[Z]"
 const content_header = [
   {
     text: "Home",

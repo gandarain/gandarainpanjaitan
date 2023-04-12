@@ -2,27 +2,33 @@ const name = "Gan[Z]"
 const content_header = [
   {
     text: "Home",
-    icon: "estate"
+    icon: "estate",
+    id: "home"
   },
   {
     text: "About",
-    icon: "user"
+    icon: "user",
+    id: "about"
   },
   {
     text: "Skill",
-    icon: "file-alt"
+    icon: "file-alt",
+    id: "skill"
   },
   {
     text: "Services",
-    icon: "briefcase"
+    icon: "briefcase",
+    id: "service"
   },
   {
     text: "Portfolio",
-    icon: "scenery"
+    icon: "scenery",
+    id: "portfolio"
   },
   {
     text: "Contact",
-    icon: "message"
+    icon: "message",
+    id: "message"
   }
 ]
 

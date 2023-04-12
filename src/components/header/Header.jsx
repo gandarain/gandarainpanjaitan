@@ -32,7 +32,7 @@ const Header = () => {
   const renderMenu = () => (
     header_menu.content_header.map((item, index) => (
       <li key={index} className={styles.nav__item} onClick={() => setActiveIndex(index)}>
-        <a href="#home" className={activeLinkStyle(index)}>
+        <a href={`#${item.id}`} className={activeLinkStyle(index)}>
           <i className={`uil uil-${item.icon} ${styles.nav__icon}`} />
           {item.text}
         </a>

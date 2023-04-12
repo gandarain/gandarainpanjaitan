@@ -13,7 +13,7 @@ const content_header = [
   {
     text: "Skill",
     icon: "file-alt",
-    id: "skill"
+    id: "skills"
   },
   {
     text: "Services",

@@ -1,7 +1,7 @@
 import React from "react"
 import Image from 'next/image'
 
-import AboutImg from "../../../public/about.jpg"
+import AboutImg from "../../../public/about.jpeg"
 import Info from "./Info"
 import constants from "@/constants"
 import styles from "./about.module.css"
@@ -28,7 +28,7 @@ const About = () => (
         <p className={styles.about__description}>
           {description}
         </p>
-        <a download href='assets/CV_Ganda.pdf' className="button button__flex">
+        <a href="/CV_Ganda.pdf" download="CV_Ganda Rain Panjaitan" className="button button__flex">
           {button_cv}
           <svg
             className="button__icon"

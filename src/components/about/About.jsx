@@ -31,7 +31,7 @@ const About = () => (
         <a download href='assets/CV_Ganda.pdf' className="button button__flex">
           {button_cv}
           <svg
-            class="button__icon"
+            className="button__icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"

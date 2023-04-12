@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./skills.module.css"
 
 const renderSkillItem = (skill) => (
-  <div className={styles.skills__data}>
+  <div key={skill.title} className={styles.skills__data}>
     <i className="bx bx-badge-check" />
     <div>
       <h3 className={styles.skills__name}>{skill.title}</h3>

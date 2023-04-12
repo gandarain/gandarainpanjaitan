@@ -18,11 +18,7 @@ const About = () => (
     <h2 className="section__title">{title}</h2>
     <span className="section__subtitle">{subtitle}</span>
     <div className={`${styles.about__container} container grid`}>
-      <Image
-        src={AboutImg}
-        alt="aboutImage"
-        className={styles.about__img}
-      />
+      <div />
       <div className={styles.about__data}>
         <Info />
         <p className={styles.about__description}>

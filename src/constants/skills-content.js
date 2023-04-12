@@ -6,27 +6,27 @@ const programming = {
   items: [
     {
       title: 'JavaScript',
-      level: 'Intermediate'
+      level: 'Expert'
     },
     {
       title: 'Kotlin',
-      level: 'Advance'
-    },
-    {
-      title: 'PHP',
-      level: 'Advance'
-    },
-    {
-      title: 'React',
       level: 'Intermediate'
     },
     {
+      title: 'PHP',
+      level: 'Intermediate'
+    },
+    {
+      title: 'React',
+      level: 'Expert'
+    },
+    {
       title: 'Node JS',
-      level: 'Advance'
+      level: 'Intermediate'
     },
     {
       title: 'CodeIgniter',
-      level: 'Advance'
+      level: 'Intermediate'
     }
   ]
 }
@@ -36,27 +36,27 @@ const tools = {
   items: [
     {
       title: 'Jest',
-      level: 'Intermediate'
+      level: 'Expert'
     },
     {
       title: 'Enzyme',
-      level: 'Advance'
+      level: 'Expert'
     },
     {
       title: 'Redux',
-      level: 'Advance'
+      level: 'Expert'
     },
     {
       title: 'Firebase',
-      level: 'Intermediate'
+      level: 'Expert'
     },
     {
       title: 'Fastlane',
-      level: 'Advance'
+      level: 'Expert'
     },
     {
       title: 'Git',
-      level: 'Advance'
+      level: 'Expert'
     }
   ]
 }

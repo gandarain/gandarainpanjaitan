@@ -6,18 +6,18 @@ const button_cv = "Download CV"
 const info = [
   {
     title: 'Experience',
-	description: '4 Years Working',
-	icon: 'award'
+    description: '4 Years Working',
+    icon: 'award'
   },
   {
     title: 'Completed',
-	description: '48 + Projects',
-	icon: 'briefcase-alt'
+    description: '48 + Projects',
+    icon: 'briefcase-alt'
   },
   {
     title: 'Support',
-	description: 'Online 24/7',
-	icon: 'support'
+    description: 'Online 24/7',
+    icon: 'support'
   }
 ]
 

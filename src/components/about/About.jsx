@@ -1,7 +1,5 @@
 import React from "react"
-import Image from 'next/image'
 
-import AboutImg from "../../../public/about.jpeg"
 import Info from "./Info"
 import constants from "@/constants"
 import styles from "./about.module.css"

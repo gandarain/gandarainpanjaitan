@@ -35,16 +35,12 @@
 }
 
 .footer__social__link {
-  background-color: var(--title-color);
-  color: var(--container-color);
-  font-size: 0.9rem;
-  padding: 0.3rem 0.4rem;
-  border-radius: 0.5rem;
-  display: inline-flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
 }
 
 .footer__social__link:hover {
-  background-color: var(--title-color-dark);
+  color: var(--title-color-dark);
 }
 
 .footer__copy {
@@ -53,14 +49,4 @@
   color: var(--title-color);
   text-align: center;
   font-size: var(--smaller-font-size);
-}
-
-/* Breakpoints */
-/* For large device */
-@media screen and (max-width: 992px) {
-  .footer__social__link {
-    padding: 0.25rem 0.35rem;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-  }
 }

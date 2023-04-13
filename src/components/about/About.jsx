@@ -16,13 +16,13 @@ const About = () => (
     <h2 className="section__title">{title}</h2>
     <span className="section__subtitle">{subtitle}</span>
     <div className={`${styles.about__container} container grid`}>
-      <div />
+      <div className={styles.hidden__div} />
       <div className={styles.about__data}>
         <Info />
         <p className={styles.about__description}>
           {description}
         </p>
-        <a href="/CV_Ganda.pdf" download="CV_Ganda Rain Panjaitan" className="button button__flex">
+        <a href="https://gandarain.github.io/gandarainpanjaitan/CV_Ganda.pdf" download="CV_Ganda Rain Panjaitan" className="button button__flex">
           {button_cv}
           <svg
             className="button__icon"

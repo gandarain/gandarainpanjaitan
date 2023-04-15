@@ -20,7 +20,7 @@ const findQualificationList = (selectedTabs) => {
       result.push(item)
     }
   })
-  console.log(result)
+  
   return result
 }
 

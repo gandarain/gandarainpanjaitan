@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
+import { Context } from "../../context"
 import constants from "@/constants";
+import actions from "@/context/actions"
 import styles from "./footer.module.css"
 
 const {
@@ -13,18 +15,27 @@ const {
     copyright
   }
 } = constants;
+const { SET_ACTIVE_INDEX } = actions
 
-const activeLinkStyle = (activeIndex, index) => (
-  activeIndex === index ? `${styles.footer__link} ${styles.active__footer__link}` : styles.footer__link
+const activeLinkStyle = (active_index, index) => (
+  active_index === index ? `${styles.footer__link} ${styles.active__footer__link}` : styles.footer__link
 )
 
-const renderListButton = ({ activeIndex, setActiveIndex }) => (
+const renderListButton = ({ state, dispatch }) => (
   <ul className={styles.footer__list}>
     {button.map((item, index) => (
-      <li key={item.id} onClick={() => setActiveIndex(index)}>
+      <li
+        key={item.id}
+        onClick={() => {
+          dispatch({
+            type: SET_ACTIVE_INDEX,
+            payload: index
+          })
+        }}
+      >
         <a
           href={item.id}
-          className={activeLinkStyle(activeIndex, index)}>
+          className={activeLinkStyle(state.active_index, index)}>
             {item.title}
           </a>
       </li>
@@ -33,11 +44,11 @@ const renderListButton = ({ activeIndex, setActiveIndex }) => (
 )
 
 const useFooterHooks = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const { state, dispatch } = useContext(Context);
 
   return {
-    activeIndex,
-    setActiveIndex
+    state,
+    dispatch
   }
 }
 

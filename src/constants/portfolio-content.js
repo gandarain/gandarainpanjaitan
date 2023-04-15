@@ -8,7 +8,7 @@ import Work6 from "../../public/work6.jpeg"
 const title = "Portfolio"
 const subtitle = "Most recent work"
 
-const work_item = [
+const portfolio_item = [
   {
     id: 1,
     image: Work1,
@@ -47,8 +47,8 @@ const work_item = [
   }
 ]
 
-const work_content = {
-	title, subtitle, work_item
+const portfolio_content = {
+	title, subtitle, portfolio_item
 }
 
-export default work_content
+export default portfolio_content

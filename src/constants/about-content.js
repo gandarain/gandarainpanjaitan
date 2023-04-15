@@ -11,7 +11,7 @@ const info = [
   },
   {
     title: 'Completed',
-    description: '48 + Projects',
+    description: '6 + Projects',
     icon: 'briefcase-alt'
   },
   {

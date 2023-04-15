@@ -42,3 +42,39 @@
 .work__button:hover .work__button__icon {
   transform: translateX(0.25rem);
 }
+
+/* Breakpoints */
+/* For large device */
+@media screen and (max-width: 992px) {
+  .work__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+/* For medium device */
+@media screen and (max-width: 768px) {
+  .work__container {
+    grid-template-columns: repeat(1, max-content);
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .work__container {
+    grid-template-columns: repeat(1, max-content);
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+/* For small device */
+@media screen and (max-width: 350px) {
+  .work__container {
+    grid-template-columns: repeat(1, max-content);
+    gap: 3rem;
+    justify-content: center;
+  }
+}

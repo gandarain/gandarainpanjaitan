@@ -47,8 +47,8 @@ const work_item = [
   }
 ]
 
-const about_content = {
+const work_content = {
 	title, subtitle, work_item
 }
 
-export default about_content
+export default work_content

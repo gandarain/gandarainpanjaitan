@@ -7,9 +7,13 @@
   padding: 2rem 0 2rem;
 }
 
-.footer__title,
 .footer__link {
-  color: var(--title-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--font-medium);
+  transition: .3s;
 }
 
 .footer__title {
@@ -17,6 +21,7 @@
   margin-bottom: var(--mb-2);
 }
 
+.active__footer__link,
 .footer__link:hover {
   color: var(--title-color-dark);
 }

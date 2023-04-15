@@ -4,6 +4,7 @@ import about_content from "./about-content";
 import skills_content from "./skills-content";
 import portfolio_content from "./portfolio-content"
 import footer_content from "./footer-content";
+import qualification_content from "./qualification-content";
 
 const constants = {
   header_menu,
@@ -11,7 +12,8 @@ const constants = {
   about_content,
   skills_content,
   portfolio_content,
-  footer_content
+  footer_content,
+  qualification_content
 }
 
 export default constants

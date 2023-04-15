@@ -1,20 +1,23 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 
+import { Context } from "../../context"
 import constants from "@/constants"
+import actions from "@/context/actions"
 import styles from "./header.module.css"
 
 const { header_menu } = constants
+const { SET_ACTIVE_INDEX } = actions
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
-  const [activeIndex, setActiveIndex] = useState(0)
+  const { state, dispatch } = useContext(Context);
 
   const menuStyle = () => (
     toggle ? `${styles.nav__menu} ${styles.show__menu}` : styles.nav__menu
   )
 
   const activeLinkStyle = (index) => (
-    activeIndex === index ? `${styles.nav__link} ${styles.active__link}` : styles.nav__link
+    state.active_index === index ? `${styles.nav__link} ${styles.active__link}` : styles.nav__link
   )
 
   const renderCloseIcon = () => (
@@ -32,7 +35,15 @@ const Header = () => {
 
   const renderMenu = () => (
     header_menu.content_header.map((item, index) => (
-      <li key={index} className={styles.nav__item} onClick={() => setActiveIndex(index)}>
+      <li
+        key={index} className={styles.nav__item}
+        onClick={() => {
+          dispatch({
+            type: SET_ACTIVE_INDEX,
+            payload: index
+          })
+        }}
+      >
         <a href={`#${item.id}`} className={activeLinkStyle(index)}>
           <i className={`uil uil-${item.icon} ${styles.nav__icon}`} />
           {item.text}

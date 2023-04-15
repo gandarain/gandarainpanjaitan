@@ -3,6 +3,7 @@ import Home from "@/components/home/Home"
 import About from "@/components/about/About"
 import Skills from "@/components/skills/Skills"
 import Footer from "@/components/footer/Footer"
+import Work from "@/components/work/Work"
 
 export default function Container() {
   return (
@@ -12,6 +13,7 @@ export default function Container() {
         <Home />
         <About />
         <Skills />
+        <Work />
         <Footer />
       </main>
     </>

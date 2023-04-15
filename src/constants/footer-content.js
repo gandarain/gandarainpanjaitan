@@ -9,6 +9,10 @@ const button = [
     id: '#about'
   },
   {
+    title: 'Qualification',
+    id: '#qualification'
+  },
+  {
     title: 'Skills',
     id: '#skills'
   },

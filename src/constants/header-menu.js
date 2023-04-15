@@ -11,14 +11,14 @@ const content_header = [
     id: "about"
   },
   {
+    text: "Qualification",
+    icon: "briefcase",
+    id: "qualification"
+  },
+  {
     text: "Skill",
     icon: "file-alt",
     id: "skills"
-  },
-  {
-    text: "Services",
-    icon: "briefcase",
-    id: "service"
   },
   {
     text: "Portfolio",

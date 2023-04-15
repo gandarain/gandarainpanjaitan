@@ -4,6 +4,7 @@ import About from "@/components/about/About"
 import Skills from "@/components/skills/Skills"
 import Footer from "@/components/footer/Footer"
 import Portfolio from "@/components/portfolio/Portfolio"
+import Qualification from "@/components/qualification/Qualification"
 
 export default function Container() {
   return (
@@ -12,6 +13,7 @@ export default function Container() {
       <main className="main">
         <Home />
         <About />
+        <Qualification />
         <Skills />
         <Portfolio />
         <Footer />

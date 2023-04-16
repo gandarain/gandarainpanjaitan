@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image'
 
+import ProjectDetail from "../projectDetail/ProjectDetail";
 import constants from "../../constants"
 import styles from "./portfolio.module.css"
 
@@ -12,7 +13,7 @@ const {
   }
 } = constants
 
-const renderWorkItem = () => (
+const renderWorkItem = ({ setShowProjectDetail, setSelectedProject }) => (
   <div className={`${styles.portfolio__container} container grid`}>
     {portfolio_item.map(item => (
       <div className={styles.portfolio__card} key={item.id}>
@@ -24,7 +25,13 @@ const renderWorkItem = () => (
         <div>
           <h3 className={styles.portfolio__title}>{item.title}</h3>
           <h3 className={styles.portfolio__title}>{item.category}</h3>
-          <a href="#" className={styles.portfolio__button}>
+          <a
+            className={styles.portfolio__button}
+            onClick={() => {
+              setShowProjectDetail(true)
+              setSelectedProject(item)
+            }}
+          >
             Detail <i className={`bx bx-right-arrow-alt ${styles.portfolio__button__icon}`} />
           </a>
         </div>
@@ -33,12 +40,36 @@ const renderWorkItem = () => (
   </div>
 )
 
-const Portfolio = () => (
-  <section className="portfolio section" id="portfolio">
-    <h2 className="section__title">{title}</h2>
-    <span className="section__subtitle">{subtitle}</span>
-    {renderWorkItem()}
-  </section>
+const renderProjectDetail = ({ setShowProjectDetail, selectedProject }) => (
+  <ProjectDetail
+    onClose={() => setShowProjectDetail(false)}
+    {...selectedProject}
+  />
 )
+
+const usePortfolio = () => {
+  const [showProjectDetail, setShowProjectDetail] = useState(false)
+  const [selectedProject, setSelectedProject] = useState({})
+
+  return {
+    showProjectDetail,
+    setShowProjectDetail,
+    selectedProject,
+    setSelectedProject
+  }
+}
+
+const Portfolio = () => {
+  const state = usePortfolio()
+
+  return (
+    <section className="portfolio section" id="portfolio">
+      <h2 className="section__title">{title}</h2>
+      <span className="section__subtitle">{subtitle}</span>
+      {renderWorkItem(state)}
+      {state.showProjectDetail && renderProjectDetail(state)}
+    </section>
+  )
+}
 
 export default Portfolio

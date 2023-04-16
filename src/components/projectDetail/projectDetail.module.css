@@ -86,6 +86,16 @@
 }
 
 /* Breakpoints */
+@media screen and (max-width: 576px) {
+  .project__detail__modal__content {
+    padding: 1rem 1rem;
+  }
+
+  .project__detail__modal__description {
+    padding: 0;
+  }
+}
+
 /* For small device */
 @media screen and (max-width: 350px) {
   .project__detail__modal__content {

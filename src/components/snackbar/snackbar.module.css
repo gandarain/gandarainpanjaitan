@@ -1,0 +1,74 @@
+.snackbar__detail__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+
+.snackbar__detail__modal__content {
+  width: 500px;
+  max-height: 500px;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+  overflow-y: scroll;
+}
+
+.snackbar__detail__modal__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.snackbar__detail__modal__title,
+.snackbar__detail__modal__description {
+  text-align: center;
+}
+
+.snackbar__detail__modal__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+.snackbar__detail__modal__description {
+  font-size: var(--small-font-size);
+  padding: 0 3.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 576px) {
+  .snackbar__detail__modal__content {
+    padding: 1rem 1rem;
+  }
+
+  .snackbar__detail__modal__description {
+    padding: 0;
+  }
+}
+
+/* For small device */
+@media screen and (max-width: 350px) {
+  .snackbar__detail__modal__content {
+    padding: 1rem 1rem;
+  }
+
+  .snackbar__detail__modal__description {
+    padding: 0;
+  }
+}

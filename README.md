@@ -12,6 +12,7 @@ If you need to understand the style and deployment, please watch the tutorial vi
 ## Tutorial
 - https://www.youtube.com/watch?v=uXFbi9Nqzc8&list=LLg-hCA7-r--Fe9le3mlXJbQ
 - https://www.youtube.com/watch?v=3aCoZudPEKE&list=LLg-hCA7-r--Fe9le3mlXJbQ&index=44
+- https://www.dotenv.org/docs/integrations/github-actions/nextjs.html
 
 ## Result
 https://gandarain.github.io/gandarainpanjaitan/

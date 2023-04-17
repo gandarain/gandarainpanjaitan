@@ -8,7 +8,8 @@ const {
     title,
     subtitle,
     contact_title,
-    contact_info
+    contact_info,
+    message
   }
 } = constants;
 
@@ -17,13 +18,12 @@ const renderContactInfo = () => (
     <div key={item.key} className={styles.contact__card}>
       <i className={`bx ${item.icon} ${styles.contact__card__icon}`} />
       <h3 className={styles.contact__card__title}>{item.title}</h3>
-      <span className={styles.contact__card__data}>{item.id}</span>
       <a
         href={item.link}
         className={styles.contact__button}
         target="_blank"
       >
-        Write me {" "}
+        {message}
         <i className={`bx bx-right-arrow-alt ${styles.contact__button__icon}`} />
       </a>
     </div>

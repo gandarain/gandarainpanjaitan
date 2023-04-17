@@ -7,6 +7,7 @@ import Skills from "@/components/skills/Skills"
 import Footer from "@/components/footer/Footer"
 import Portfolio from "@/components/portfolio/Portfolio"
 import Qualification from "@/components/qualification/Qualification"
+import Contact from "@/components/contact/Contact"
 
 export default function Container() {
   return (
@@ -18,6 +19,7 @@ export default function Container() {
         <Qualification />
         <Skills />
         <Portfolio />
+        <Contact />
         <Footer />
       </main>
     </Provider>

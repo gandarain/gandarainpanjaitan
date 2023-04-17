@@ -1,6 +1,14 @@
 const title = "Ganda Rain Panjaitan"
 const button = [
   {
+    title: 'Home',
+    id: "#home"
+  },
+  {
+    title: 'About',
+    id: '#about'
+  },
+  {
     title: 'Qualification',
     id: '#qualification'
   },

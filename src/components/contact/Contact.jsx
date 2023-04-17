@@ -1,55 +1,45 @@
 import React from "react";
 
+import constants from "@/constants";
 import styles from "./contact.module.css"
+
+const {
+  contact: {
+    title,
+    subtitle,
+    contact_title,
+    contact_info
+  }
+} = constants;
+
+const renderContactInfo = () => (
+  contact_info.map(item => (
+    <div key={item.key} className={styles.contact__card}>
+      <i className={`bx ${item.icon} ${styles.contact__card__icon}`} />
+      <h3 className={styles.contact__card__title}>{item.title}</h3>
+      <span className={styles.contact__card__data}>{item.id}</span>
+      <a
+        href={item.link}
+        className={styles.contact__button}
+        target="_blank"
+      >
+        Write me {" "}
+        <i className={`bx bx-right-arrow-alt ${styles.contact__button__icon}`} />
+      </a>
+    </div>
+  ))
+)
 
 const Contact = () => (
   <section className="contact section" id="contact">
-    <h2 className="section__title">Contact</h2>
-    <span className="section__subtitle">Get in touch</span>
+    <h2 className="section__title">{title}</h2>
+    <span className="section__subtitle">{subtitle}</span>
 
     <div className={`${styles.contact__container} container grid`}>
       <div className="contact__content">
-        <h3 className={styles.contact__title}>Discuss with me</h3>
+        <h3 className={styles.contact__title}>{contact_title}</h3>
         <div className={styles.contact__info}>
-          <div className={styles.contact__card}>
-            <i className={`bx bx-mail-send ${styles.contact__card__icon}`} />
-            <h3 className={styles.contact__card__title}>Email</h3>
-            <span className={styles.contact__card__data}>gandarainpanjaitan@gmail.com</span>
-            <a
-              href="mailto:gandarainpanjaitan@gmail.com"
-              className={styles.contact__button}
-              target="_blank"
-            >
-              Write me {" "}
-              <i className={`bx bx-right-arrow-alt ${styles.contact__button__icon}`} />
-            </a>
-          </div>
-          <div className={styles.contact__card}>
-            <i className={`bx bxl-whatsapp ${styles.contact__card__icon}`} />
-            <h3 className={styles.contact__card__title}>Whatsapp</h3>
-            <span className={styles.contact__card__data}>+6281389608041</span>
-            <a
-              href="https://api.whatsapp.com/send?phone=6281389608041&text=Hello, more information"
-              className={styles.contact__button}
-              target="_blank"
-            >
-              Write me {" "}
-              <i className={`bx bx-right-arrow-alt ${styles.contact__button__icon}`} />
-            </a>
-          </div>
-          <div className={styles.contact__card}>
-            <i className={`bx bxl-telegram ${styles.contact__card__icon}`} />
-            <h3 className={styles.contact__card__title}>Telegram</h3>
-            <span className={styles.contact__card__data}>gandarainpanjaitan</span>
-            <a
-              href="https://telegram.me/gandarainpanjaitan"
-              className={styles.contact__button}
-              target="_blank"
-            >
-              Write me {" "}
-              <i className={`bx bx-right-arrow-alt ${styles.contact__button__icon}`} />
-            </a>
-          </div>
+          {renderContactInfo()}
         </div>
       </div>
       <div className="contact__content">
@@ -81,7 +71,7 @@ const Contact = () => (
               cols="30"
               rows="10"
               placeholder="Write your job or project description"
-            ></textarea>
+            />
           </div>
           <button className="button button__flex">
             Submit

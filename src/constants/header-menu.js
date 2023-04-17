@@ -28,7 +28,7 @@ const content_header = [
   {
     text: "Contact",
     icon: "message",
-    id: "message"
+    id: "contact"
   }
 ]
 

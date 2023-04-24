@@ -4,6 +4,7 @@ import Work3 from "../../public/work3.png"
 import Work4 from "../../public/work4.jpeg"
 import Work5 from "../../public/work5.png"
 import Work6 from "../../public/work6.jpeg"
+import Work7 from "../../public/work7.jpg"
 
 const title = "Portfolio"
 const subtitle = "Most recent work"
@@ -11,6 +12,35 @@ const subtitle = "Most recent work"
 const portfolio_item = [
   {
     id: 1,
+    image: Work7,
+    title: 'CV Putra Indah Karya',
+    category: 'Website Application',
+    description: 'Develop landing page website application for CV Putra Indah Karya with Next JS and Reactstrap',
+    info: [
+      {
+        id: 1,
+        title: 'Initiate landing page for CV Putra Indah Karya'
+      },
+      {
+        id: 2,
+        title: 'Develop feature for landing page for CV Putra Indah Karya'
+      },
+      {
+        id: 3,
+        title: 'Deploy to github io'
+      },
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bx-link',
+        link: 'https://gandarain.github.io/putra_indah_karya/',
+        title: 'Website'
+      }
+    ]
+  },
+  {
+    id: 2,
     image: Work1,
     title: 'Jenius',
     category: 'Mobile & Website Application',
@@ -65,7 +95,7 @@ const portfolio_item = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     image: Work2,
     title: 'Prixa.ai',
     category: 'Website Application',
@@ -86,7 +116,7 @@ const portfolio_item = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     image: Work3,
     title: 'Halojasa',
     category: 'Mobile & Website Application',
@@ -143,7 +173,7 @@ const portfolio_item = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     image: Work4,
     title: 'TAM Syariah',
     category: 'Mobile & Website Application',
@@ -173,7 +203,7 @@ const portfolio_item = [
     result: []
   },
   {
-    id: 5,
+    id: 6,
     image: Work5,
     title: 'Sahabat Lawyer',
     category: 'Mobile & Website Application',
@@ -214,7 +244,7 @@ const portfolio_item = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     image: Work6,
     title: 'Toko Insani',
     category: 'Mobile Application',

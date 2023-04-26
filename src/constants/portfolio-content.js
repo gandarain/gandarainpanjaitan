@@ -29,12 +29,22 @@ const portfolio_item = [
         id: 3,
         title: 'Deploy to github io'
       },
+      {
+        id: 4,
+        title: 'Setup and deploy production with vercel'
+      }
     ],
     result: [
       {
         id: 1,
         icon: 'bx-link',
         link: 'https://gandarain.github.io/putra_indah_karya/',
+        title: 'Website'
+      },
+      {
+        id: 2,
+        icon: 'bx-link',
+        link: 'https://www.putraindahkarya.com/',
         title: 'Website'
       }
     ]

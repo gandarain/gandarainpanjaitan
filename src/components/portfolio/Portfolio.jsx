@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from 'next/image'
 
 import ProjectDetail from "../projectDetail/ProjectDetail";
 import constants from "../../constants"
+import hooks from "@/hooks"
 import styles from "./portfolio.module.css"
 
+const { AnimationOnScrollView } = hooks
 const {
   portfolio_content: {
     title,
@@ -61,9 +63,15 @@ const usePortfolio = () => {
 
 const Portfolio = () => {
   const state = usePortfolio()
+  const domRef = useRef()
+  const { isVisible } = AnimationOnScrollView(domRef)
 
   return (
-    <section className="portfolio section" id="portfolio">
+    <section
+      ref={domRef}
+      className={`portfolio section ${isVisible ? 'appear' : ''}`}
+      id="portfolio"
+    >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
       {renderWorkItem(state)}

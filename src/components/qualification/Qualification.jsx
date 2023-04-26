@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
+import hooks from "@/hooks"
 import constants from "@/constants";
 import styles from "./qualification.module.css"
 
+const { AnimationOnScrollView } = hooks
 const {
   qualification_content: {
     title,
@@ -80,12 +82,16 @@ const renderQualificationList = ({ qualificationList }) => (
 const useQualificationHooks = () => {
   const [selectedTabs, setSelectedTabs] = useState(qualification_tabs[0].id)
   const [qualificationList, setQualificationList] = useState(findQualificationList(selectedTabs))
-  
+  const domRef = useRef()
+  const { isVisible } = AnimationOnScrollView(domRef)
+
   return {
     selectedTabs,
     setSelectedTabs,
     qualificationList,
-    setQualificationList
+    setQualificationList,
+    domRef,
+    isVisible
   }
 }
 
@@ -93,7 +99,11 @@ const Qualification = () => {
   const state = useQualificationHooks()
 
   return (
-      <section className="qualification section" id="qualification">
+    <section
+      ref={state.domRef}
+      className={`qualification section ${state.isVisible ? 'appear' : ''}`}
+      id="qualification"
+    >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
       <div className={`${styles.qualification__container} container`}>

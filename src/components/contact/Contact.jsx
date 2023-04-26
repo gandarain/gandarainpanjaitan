@@ -3,9 +3,11 @@ import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 import Snackbar from "../snackbar/Snackbar";
+import hooks from "@/hooks"
 import constants from "@/constants";
 import styles from "./contact.module.css"
 
+const { AnimationOnScrollView } = hooks
 const {
   contact: {
     title,
@@ -39,6 +41,8 @@ const Contact = () => {
   const [emailResult, setEmailResult] = useState({
     status: false
   })
+  const domRef = useRef()
+  const { isVisible } = AnimationOnScrollView(domRef)
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -60,7 +64,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section" id="contact">
+    <section
+      ref={domRef}
+      className={`contact section ${isVisible ? 'appear' : ''}`}
+      id="contact"
+    >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
 

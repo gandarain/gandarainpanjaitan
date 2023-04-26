@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useRef } from "react"
 
 import Info from "./Info"
 import constants from "@/constants"
+import hooks from "@/hooks"
 import styles from "./about.module.css"
 
+const { AnimationOnScrollView } = hooks
 const { about_content: {
   title,
   subtitle,
@@ -11,8 +13,16 @@ const { about_content: {
   button_cv
 } } = constants
 
-const About = () => (
-  <section className="about section" id="about">
+const About = () => {
+  const domRef = useRef()
+  const { isVisible } = AnimationOnScrollView(domRef)
+
+  return (
+    <section
+      ref={domRef}
+      className={`about section ${isVisible ? 'appear' : ''}`}
+      id="about"
+    >
     <h2 className="section__title">{title}</h2>
     <span className="section__subtitle">{subtitle}</span>
     <div className={`${styles.about__container} container grid`}>
@@ -53,6 +63,7 @@ const About = () => (
       </div>
     </div>
   </section>
-)
+  )
+}
 
 export default About

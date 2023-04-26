@@ -1,10 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useRef } from "react";
 
 import { Context } from "../../context"
+import hooks from "@/hooks"
 import constants from "@/constants";
 import actions from "@/context/actions"
 import styles from "./footer.module.css"
 
+const { AnimationOnScrollView } = hooks
 const {
   home_content: {
     social_media
@@ -45,10 +47,14 @@ const renderListButton = ({ state, dispatch }) => (
 
 const useFooterHooks = () => {
   const { state, dispatch } = useContext(Context);
+  const domRef = useRef()
+  const { isVisible } = AnimationOnScrollView(domRef)
 
   return {
     state,
-    dispatch
+    dispatch,
+    domRef,
+    isVisible
   }
 }
 
@@ -56,7 +62,10 @@ const Footer = () => {
   const state = useFooterHooks()
 
   return (
-    <footer className={styles.footer}>
+    <footer
+      ref={state.domRef}
+      className={`${styles.footer} ${state.isVisible ? 'appear' : ''}`}
+    >
       <div className={`${styles.footer__container} container`}>
         <h1 className={styles.footer__title}>{title}</h1>
         {renderListButton(state)}

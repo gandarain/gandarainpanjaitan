@@ -1,9 +1,9 @@
-import React, { useRef } from "react"
+import React, { useRef } from 'react'
 
-import Info from "./Info"
-import constants from "@/constants"
-import hooks from "@/hooks"
-import styles from "./about.module.css"
+import Info from './Info'
+import constants from '@/constants'
+import hooks from '@/hooks'
+import styles from './about.module.css'
 
 const { AnimationOnScrollView } = hooks
 const { about_content: {

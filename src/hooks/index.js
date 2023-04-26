@@ -1,4 +1,4 @@
-import AnimationOnScrollView from "./animationOnScrollView";
+import AnimationOnScrollView from './animationOnScrollView'
 
 const hooks = {
   AnimationOnScrollView

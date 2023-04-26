@@ -1,13 +1,13 @@
-import Work1 from "../../public/work1.png"
-import Work2 from "../../public/work2.png"
-import Work3 from "../../public/work3.png"
-import Work4 from "../../public/work4.jpeg"
-import Work5 from "../../public/work5.png"
-import Work6 from "../../public/work6.jpeg"
-import Work7 from "../../public/work7.jpg"
+import Work1 from '../../public/work1.png'
+import Work2 from '../../public/work2.png'
+import Work3 from '../../public/work3.png'
+import Work4 from '../../public/work4.jpeg'
+import Work5 from '../../public/work5.png'
+import Work6 from '../../public/work6.jpeg'
+import Work7 from '../../public/work7.jpg'
 
-const title = "Portfolio"
-const subtitle = "Most recent work"
+const title = 'Portfolio'
+const subtitle = 'Most recent work'
 
 const portfolio_item = [
   {

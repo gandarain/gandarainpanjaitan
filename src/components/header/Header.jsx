@@ -1,10 +1,10 @@
-import React, { useState, useContext, useRef } from "react"
+import React, { useState, useContext, useRef } from 'react'
 
-import { Context } from "../../context"
-import constants from "@/constants"
-import hooks from "@/hooks"
-import actions from "@/context/actions"
-import styles from "./header.module.css"
+import { Context } from '../../context'
+import constants from '@/constants'
+import hooks from '@/hooks'
+import actions from '@/context/actions'
+import styles from './header.module.css'
 
 const { AnimationOnScrollView } = hooks
 const { header_menu } = constants
@@ -12,7 +12,7 @@ const { SET_ACTIVE_INDEX } = actions
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
-  const { state, dispatch } = useContext(Context);
+  const { state, dispatch } = useContext(Context)
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
 
@@ -33,7 +33,7 @@ const Header = () => {
 
   const renderToggleIcon = () => (
     <div className={styles.nav__toggle} onClick={() => setToggle(!toggle)}>
-      <i className={`uil uil-apps`} />
+      <i className={'uil uil-apps'} />
     </div>
   )
 

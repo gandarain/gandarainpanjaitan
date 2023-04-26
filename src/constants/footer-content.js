@@ -1,8 +1,8 @@
-const title = "Ganda Rain Panjaitan"
+const title = 'Ganda Rain Panjaitan'
 const button = [
   {
     title: 'Home',
-    id: "#home"
+    id: '#home'
   },
   {
     title: 'About',

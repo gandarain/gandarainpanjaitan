@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import constants from "@/constants";
-import styles from './home.module.css';
+import constants from '@/constants'
+import styles from './home.module.css'
 
 const {
   home_content: {
     full_name, title, description, button_hello
   }
-} = constants;
+} = constants
 
 const Data = () => (
   <div className={styles.home__data}>

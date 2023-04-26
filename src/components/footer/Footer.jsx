@@ -1,10 +1,10 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef } from 'react'
 
-import { Context } from "../../context"
-import hooks from "@/hooks"
-import constants from "@/constants";
-import actions from "@/context/actions"
-import styles from "./footer.module.css"
+import { Context } from '../../context'
+import hooks from '@/hooks'
+import constants from '@/constants'
+import actions from '@/context/actions'
+import styles from './footer.module.css'
 
 const { AnimationOnScrollView } = hooks
 const {
@@ -16,7 +16,7 @@ const {
     button,
     copyright
   }
-} = constants;
+} = constants
 const { SET_ACTIVE_INDEX } = actions
 
 const activeLinkStyle = (active_index, index) => (
@@ -46,7 +46,7 @@ const renderListButton = ({ state, dispatch }) => (
 )
 
 const useFooterHooks = () => {
-  const { state, dispatch } = useContext(Context);
+  const { state, dispatch } = useContext(Context)
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
 

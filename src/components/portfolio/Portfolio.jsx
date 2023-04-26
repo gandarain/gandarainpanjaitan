@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 
-import ProjectDetail from "../projectDetail/ProjectDetail";
-import constants from "../../constants"
-import hooks from "@/hooks"
-import styles from "./portfolio.module.css"
+import ProjectDetail from '../projectDetail/ProjectDetail'
+import constants from '../../constants'
+import hooks from '@/hooks'
+import styles from './portfolio.module.css'
 
 const { AnimationOnScrollView } = hooks
 const {

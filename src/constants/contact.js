@@ -1,7 +1,7 @@
-const title = "Contact"
-const subtitle = "Get in touch"
-const contact_title = "Discuss with me"
-const message = "Write me "
+const title = 'Contact'
+const subtitle = 'Get in touch'
+const contact_title = 'Discuss with me'
+const message = 'Write me '
 
 const contact_info = [
   {

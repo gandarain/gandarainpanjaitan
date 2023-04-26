@@ -1,5 +1,5 @@
-const title = "Skills"
-const subtitle = "Technology Stack"
+const title = 'Skills'
+const subtitle = 'Technology Stack'
 
 const programming = {
   title: 'Programming Language & Framework',

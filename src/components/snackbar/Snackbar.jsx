@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import styles from "./snackbar.module.css"
+import styles from './snackbar.module.css'
 
 const Snackbar = ({ title, message, onClose }) => (
   <div className={styles.snackbar__detail__modal}>

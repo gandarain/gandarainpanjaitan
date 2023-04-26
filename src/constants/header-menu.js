@@ -1,34 +1,34 @@
-const name = "Gan[Z]"
+const name = 'Gan[Z]'
 const content_header = [
   {
-    text: "Home",
-    icon: "estate",
-    id: "home"
+    text: 'Home',
+    icon: 'estate',
+    id: 'home'
   },
   {
-    text: "About",
-    icon: "user",
-    id: "about"
+    text: 'About',
+    icon: 'user',
+    id: 'about'
   },
   {
-    text: "Qualification",
-    icon: "briefcase",
-    id: "qualification"
+    text: 'Qualification',
+    icon: 'briefcase',
+    id: 'qualification'
   },
   {
-    text: "Skills",
-    icon: "file-alt",
-    id: "skills"
+    text: 'Skills',
+    icon: 'file-alt',
+    id: 'skills'
   },
   {
-    text: "Portfolio",
-    icon: "scenery",
-    id: "portfolio"
+    text: 'Portfolio',
+    icon: 'scenery',
+    id: 'portfolio'
   },
   {
-    text: "Contact",
-    icon: "message",
-    id: "contact"
+    text: 'Contact',
+    icon: 'message',
+    id: 'contact'
   }
 ]
 

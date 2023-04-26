@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 
-import constants from "@/constants"
-import styles from "./about.module.css"
+import constants from '@/constants'
+import styles from './about.module.css'
 
 const { about_content: {
   info

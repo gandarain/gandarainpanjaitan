@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react'
 
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 
-import Snackbar from "../snackbar/Snackbar";
-import hooks from "@/hooks"
-import constants from "@/constants";
-import styles from "./contact.module.css"
+import Snackbar from '../snackbar/Snackbar'
+import hooks from '@/hooks'
+import constants from '@/constants'
+import styles from './contact.module.css'
 
 const { AnimationOnScrollView } = hooks
 const {
@@ -16,7 +16,7 @@ const {
     contact_info,
     message
   }
-} = constants;
+} = constants
 
 const renderContactInfo = () => (
   contact_info.map(item => (
@@ -37,7 +37,7 @@ const renderContactInfo = () => (
 )
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef()
   const [emailResult, setEmailResult] = useState({
     status: false
   })
@@ -45,10 +45,10 @@ const Contact = () => {
   const { isVisible } = AnimationOnScrollView(domRef)
 
   const sendEmail = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
-      const result = await emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
+      await emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
       setEmailResult({
         status: true,
         title: 'Success',
@@ -61,7 +61,7 @@ const Contact = () => {
         message: 'Your email was not sent successfully'
       })
     }
-  };
+  }
 
   return (
     <section

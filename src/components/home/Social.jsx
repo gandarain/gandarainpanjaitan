@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import constants from "@/constants";
+import constants from '@/constants'
 import styles from './home.module.css'
 
 const {
   home_content: {
     social_media
   }
-} = constants;
+} = constants
 
 const Social = () => (
 	<div className={styles.home__social}>

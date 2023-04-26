@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import styles from "./projectDetail.module.css"
+import styles from './projectDetail.module.css'
 
 const renderInfoItem = (info) => (
   <ul className={`${styles.project__detail__modal__services} grid`}>

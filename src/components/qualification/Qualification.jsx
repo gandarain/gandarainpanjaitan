@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react'
 
-import hooks from "@/hooks"
-import constants from "@/constants";
-import styles from "./qualification.module.css"
+import hooks from '@/hooks'
+import constants from '@/constants'
+import styles from './qualification.module.css'
 
 const { AnimationOnScrollView } = hooks
 const {

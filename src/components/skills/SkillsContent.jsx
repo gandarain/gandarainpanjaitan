@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import styles from "./skills.module.css"
+import styles from './skills.module.css'
 
 const renderSkillItem = (skill) => (
   <div key={skill.title} className={styles.skills__data}>
@@ -14,10 +14,10 @@ const renderSkillItem = (skill) => (
 
 const renderSkillsGroup = (items) => {
   const chunkSize = 3
-  const result = [];
+  const result = []
 
   for (let index = 0; index < items.length; index+=chunkSize) {
-    result.push(items.slice(index, index+chunkSize));
+    result.push(items.slice(index, index+chunkSize))
   }
 
   return result.map((item, index) => (

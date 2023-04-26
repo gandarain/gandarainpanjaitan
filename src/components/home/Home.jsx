@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react'
 
-import Social from "./Social";
-import Data from "./Data";
-import hooks from "@/hooks"
+import Social from './Social'
+import Data from './Data'
+import hooks from '@/hooks'
 import styles from './home.module.css'
 
 const { AnimationOnScrollView } = hooks

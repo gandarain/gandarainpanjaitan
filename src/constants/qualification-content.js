@@ -1,5 +1,5 @@
-const title = "Qualification"
-const subtitle = "My personal journey"
+const title = 'Qualification'
+const subtitle = 'My personal journey'
 const qualification_tabs = [
   {
     id: 1,

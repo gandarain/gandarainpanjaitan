@@ -1,7 +1,6 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 
-import ProjectDetail from '../projectDetail/ProjectDetail'
 import constants from '../../constants'
 import hooks from '@/hooks'
 import styles from './portfolio.module.css'
@@ -42,27 +41,7 @@ const renderWorkItem = ({ setShowProjectDetail, setSelectedProject }) => (
   </div>
 )
 
-const renderProjectDetail = ({ setShowProjectDetail, selectedProject }) => (
-  <ProjectDetail
-    onClose={() => setShowProjectDetail(false)}
-    {...selectedProject}
-  />
-)
-
-const usePortfolio = () => {
-  const [showProjectDetail, setShowProjectDetail] = useState(false)
-  const [selectedProject, setSelectedProject] = useState({})
-
-  return {
-    showProjectDetail,
-    setShowProjectDetail,
-    selectedProject,
-    setSelectedProject
-  }
-}
-
-const Portfolio = () => {
-  const state = usePortfolio()
+const Portfolio = (props) => {
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
 
@@ -74,8 +53,7 @@ const Portfolio = () => {
     >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
-      {renderWorkItem(state)}
-      {state.showProjectDetail && renderProjectDetail(state)}
+      {renderWorkItem(props)}
     </section>
   )
 }

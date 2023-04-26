@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import { Provider } from '../context'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -9,8 +10,34 @@ import Footer from '@/components/footer/Footer'
 import Portfolio from '@/components/portfolio/Portfolio'
 import Qualification from '@/components/qualification/Qualification'
 import Contact from '@/components/contact/Contact'
+import ProjectDetail from '@/components/projectDetail/ProjectDetail'
+import Snackbar from '@/components/snackbar/Snackbar'
 
-export default function Container() {
+const renderProjectDetail = ({ setShowProjectDetail, selectedProject }) => (
+  <ProjectDetail
+    onClose={() => setShowProjectDetail(false)}
+    {...selectedProject}
+  />
+)
+
+const usePortfolio = () => {
+  const [showProjectDetail, setShowProjectDetail] = useState(false)
+  const [selectedProject, setSelectedProject] = useState({})
+
+  return {
+    showProjectDetail,
+    setShowProjectDetail,
+    selectedProject,
+    setSelectedProject
+  }
+}
+
+const Container = () => {
+  const state = usePortfolio()
+  const [emailResult, setEmailResult] = useState({
+    status: false
+  })
+
   return (
     <>
       <Provider>
@@ -20,12 +47,16 @@ export default function Container() {
           <About />
           <Qualification />
           <Skills />
-          <Portfolio />
-          <Contact />
+          <Portfolio {...state} />
+          <Contact emailResult={emailResult} setEmailResult={setEmailResult} />
           <Footer />
         </main>
+        {state.showProjectDetail && renderProjectDetail(state)}
+        {emailResult.status && <Snackbar {...emailResult} onClose={() => setEmailResult({ status: false })} />}
       </Provider>
       <Analytics />
     </>
   )
 }
+
+export default Container

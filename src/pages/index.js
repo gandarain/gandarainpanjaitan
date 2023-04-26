@@ -1,4 +1,5 @@
 import { Provider } from '../context'
+import { Analytics } from '@vercel/analytics/react'
 
 import Header from '@/components/header/Header'
 import Home from '@/components/home/Home'
@@ -11,17 +12,20 @@ import Contact from '@/components/contact/Contact'
 
 export default function Container() {
   return (
-    <Provider>
-      <Header />
-      <main className="main">
-        <Home />
-        <About />
-        <Qualification />
-        <Skills />
-        <Portfolio />
-        <Contact />
-        <Footer />
-      </main>
-    </Provider>
+    <>
+      <Provider>
+        <Header />
+        <main className="main">
+          <Home />
+          <About />
+          <Qualification />
+          <Skills />
+          <Portfolio />
+          <Contact />
+          <Footer />
+        </main>
+      </Provider>
+      <Analytics />
+    </>
   )
 }

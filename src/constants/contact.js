@@ -27,12 +27,21 @@ const contact_info = [
   }
 ]
 
+const form_title = 'Job Opportunity or Project'
+const input_name = 'Name'
+const input_email = 'Email'
+const input_project = 'Job or project'
+
 const contact_content = {
 	title,
   subtitle,
   contact_title,
   contact_info,
-  message
+  message,
+  form_title,
+  input_name,
+  input_email,
+  input_project
 }
 
 export default contact_content

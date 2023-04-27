@@ -53,6 +53,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
+  cursor: pointer;
 }
 
 .contact__button__icon {

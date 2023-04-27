@@ -13,7 +13,11 @@ const {
     subtitle,
     contact_title,
     contact_info,
-    message
+    message,
+    form_title,
+    input_name,
+    input_email,
+    input_project
   }
 } = constants
 
@@ -22,9 +26,12 @@ const renderContactInfo = () => (
     <div key={item.key} className={styles.contact__card}>
       <i className={`bx ${item.icon} ${styles.contact__card__icon}`} />
       <h3 className={styles.contact__card__title}>{item.title}</h3>
-      <span className={styles.contact__card__data}>{item.id}</span>
       <a
-        href={item.link}
+        onClick={(e) => {
+          console.log('hello')
+          e.preventDefault()
+          window.open(item.link)
+        }}
         className={styles.contact__button}
         target="_blank"
       >
@@ -77,10 +84,10 @@ const Contact = ({ setEmailResult }) => {
           </div>
         </div>
         <div className="contact__content">
-          <h3 className={styles.contact__title}>Job Opportunity or Project</h3>
+          <h3 className={styles.contact__title}>{form_title}</h3>
           <form ref={form} className={styles.contact__form} onSubmit={sendEmail}>
             <div className={styles.contact__form__div}>
-              <label className={styles.contact__form__tag}>Name</label>
+              <label className={styles.contact__form__tag}>{input_name}</label>
               <input
                 type="text"
                 name="name"
@@ -89,7 +96,7 @@ const Contact = ({ setEmailResult }) => {
               />
             </div>
             <div className={styles.contact__form__div}>
-              <label className={styles.contact__form__tag}>Email</label>
+              <label className={styles.contact__form__tag}>{input_email}</label>
               <input
                 type="email"
                 name="email"
@@ -98,7 +105,7 @@ const Contact = ({ setEmailResult }) => {
               />
             </div>
             <div className={`${styles.contact__form__div} ${styles.contact__form__area}`}>
-              <label className={styles.contact__form__tag}>Job or project</label>
+              <label className={styles.contact__form__tag}>{input_project}</label>
               <textarea
                 name="project"
                 className={styles.contact__form__input}

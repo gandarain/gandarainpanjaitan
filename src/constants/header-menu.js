@@ -29,6 +29,11 @@ const content_header = [
     text: 'Contact',
     icon: 'message',
     id: 'contact'
+  },
+  {
+    text: 'Certificate',
+    icon: 'file-alt',
+    id: 'certificate'
   }
 ]
 

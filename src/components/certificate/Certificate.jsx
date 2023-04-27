@@ -56,7 +56,7 @@ const Certificate = () => {
     <section
       ref={domRef}
       className={`certificate section ${isVisible ? 'appear' : ''}`}
-      id="about"
+      id="certificate"
     >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>

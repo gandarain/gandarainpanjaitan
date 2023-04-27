@@ -23,7 +23,7 @@
   flex-direction: column;
   margin-top: var(--mb-0-5);
   margin-bottom: var(--mb-0-5);
-  ;
+  text-align: center;
 }
 
 .certificate__image {

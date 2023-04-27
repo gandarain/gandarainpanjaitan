@@ -5,6 +5,7 @@ import Work4 from '../../public/work4.jpeg'
 import Work5 from '../../public/work5.png'
 import Work6 from '../../public/work6.jpeg'
 import Work7 from '../../public/work7.jpg'
+import Work8 from '../../public/work8.png'
 
 const title = 'Portfolio'
 const subtitle = 'Most recent work'
@@ -47,7 +48,8 @@ const portfolio_item = [
         link: 'https://www.putraindahkarya.com/',
         title: 'Website'
       }
-    ]
+    ],
+    filterId: 1
   },
   {
     id: 2,
@@ -102,7 +104,8 @@ const portfolio_item = [
         link: 'https://play.google.com/store/apps/details?id=com.btpn.dc&hl=en_US',
         title: 'Google Play Store'
       }
-    ]
+    ],
+    filterId: 1
   },
   {
     id: 3,
@@ -123,7 +126,8 @@ const portfolio_item = [
         link: 'https://www.prixa.ai/',
         title: 'Website'
       }
-    ]
+    ],
+    filterId: 1
   },
   {
     id: 4,
@@ -180,7 +184,8 @@ const portfolio_item = [
         link: 'https://halojasa.com/',
         title: 'Website'
       }
-    ]
+    ],
+    filterId: 1
   },
   {
     id: 5,
@@ -210,7 +215,8 @@ const portfolio_item = [
         title: 'Create a build for Production'
       }
     ],
-    result: []
+    result: [],
+    filterId: 1
   },
   {
     id: 6,
@@ -251,7 +257,8 @@ const portfolio_item = [
         link: 'https://play.google.com/store/apps/details?id=com.sahabatlawyer&hl=in&gl=US',
         title: 'Google Play Store'
       }
-    ]
+    ],
+    filterId: 1
   },
   {
     id: 7,
@@ -281,12 +288,127 @@ const portfolio_item = [
         title: 'Create a build for Production'
       }
     ],
-    result: []
+    result: [],
+    filterId: 1
+  },
+  {
+    id: 8,
+    image: Work8,
+    title: 'Github User',
+    category: 'Android Application',
+    description: 'Develop android application with kotlin for get Dicoding "Belajar Fundamental Aplikasi Android" Certificate',
+    info: [
+      {
+        id: 1,
+        title: 'Develop android application with kotlin'
+      },
+      {
+        id: 2,
+        title: 'Learning how to create Activity and Fragment'
+      },
+      {
+        id: 3,
+        title: 'Design UI with XML'
+      },
+      {
+        id: 4,
+        title: 'Integrate Github API with retrofit'
+      },
+      {
+        id: 5,
+        title: 'Implement recyclerview to render list'
+      },
+      {
+        id: 6,
+        title: 'Implement basic ui testing with mockito and espresso'
+      }
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bxl-android',
+        link: 'https://github.com/gandarain/github-user/releases',
+        title: 'APK'
+      },
+      {
+        id: 2,
+        icon: 'bxl-github',
+        link: 'https://github.com/gandarain/github-user',
+        title: 'Github'
+      }
+    ],
+    filterId: 2
+  },
+  {
+    id: 9,
+    image: Work8,
+    title: 'Story App',
+    category: 'Android Application',
+    description: 'Develop android application with kotlin for get Dicoding "Belajar Fundamental Aplikasi Android" Certificate',
+    info: [
+      {
+        id: 1,
+        title: 'Develop android application with kotlin'
+      },
+      {
+        id: 2,
+        title: 'Implement livedata'
+      },
+      {
+        id: 3,
+        title: 'Learning how to create Activity and Fragment'
+      },
+      {
+        id: 4,
+        title: 'Design UI with XML'
+      },
+      {
+        id: 5,
+        title: 'Integrate Github API with retrofit'
+      },
+      {
+        id: 6,
+        title: 'Implement recyclerview to render list'
+      },
+      {
+        id: 7,
+        title: 'Implement basic ui testing with mockito and espresso'
+      }
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bxl-android',
+        link: 'https://github.com/gandarain/Story-App/releases',
+        title: 'APK'
+      },
+      {
+        id: 2,
+        icon: 'bxl-github',
+        link: 'https://github.com/gandarain/Story-App',
+        title: 'Github'
+      }
+    ],
+    filterId: 2
+  },
+]
+
+const portfolio_filter = [
+  {
+    id: 1,
+    title: 'Project'
+  },
+  {
+    id: 2,
+    title: 'Learning'
   }
 ]
 
 const portfolio_content = {
-	title, subtitle, portfolio_item
+	title,
+  subtitle,
+  portfolio_item,
+  portfolio_filter
 }
 
 export default portfolio_content

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 
 import constants from '../../constants'
@@ -10,13 +10,30 @@ const {
   portfolio_content: {
     title,
     subtitle,
-    portfolio_item
+    portfolio_item,
+    portfolio_filter
   }
 } = constants
 
-const renderWorkItem = ({ setShowProjectDetail, setSelectedProject }) => (
+const renderPortfolioFilter = ({ selectedFilter, setSelectedFilter }) => (
+  <div className={styles.portfolio__filter}>
+    {
+      portfolio_filter.map(item => (
+        <div
+          onClick={() => setSelectedFilter(item.id)}
+          key={item.id}
+          className={`${styles.portfolio__filter__item} ${selectedFilter === item.id ? styles.portfolio__filter__item__selected : ''}`}
+        >
+          {item.title}
+        </div>
+      ))
+    }
+  </div>
+)
+
+const renderWorkItem = ({ setShowProjectDetail, setSelectedProject}, selectedFilter) => (
   <div className={`${styles.portfolio__container} container grid`}>
-    {portfolio_item.map(item => (
+    {portfolio_item.filter(item => item.filterId === selectedFilter).map(item => (
       <div className={styles.portfolio__card} key={item.id}>
         <Image
           src={item.image}
@@ -44,6 +61,7 @@ const renderWorkItem = ({ setShowProjectDetail, setSelectedProject }) => (
 const Portfolio = (props) => {
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
+  const [selectedFilter, setSelectedFilter] = useState(1)
 
   return (
     <section
@@ -53,7 +71,8 @@ const Portfolio = (props) => {
     >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
-      {renderWorkItem(props)}
+      {renderPortfolioFilter({selectedFilter, setSelectedFilter})}
+      {renderWorkItem(props, selectedFilter)}
     </section>
   )
 }

@@ -28,7 +28,6 @@ const renderContactInfo = () => (
       <h3 className={styles.contact__card__title}>{item.title}</h3>
       <a
         onClick={(e) => {
-          console.log('hello')
           e.preventDefault()
           window.open(item.link)
         }}

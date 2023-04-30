@@ -37,9 +37,10 @@ const renderListButton = ({ state, dispatch }) => (
       >
         <a
           href={item.id}
-          className={activeLinkStyle(state.active_index, index)}>
-            {item.title}
-          </a>
+          className={activeLinkStyle(state.active_index, index)}
+          >
+          {item.title}
+        </a>
       </li>
     ))}
   </ul>

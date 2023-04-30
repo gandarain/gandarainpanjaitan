@@ -31,6 +31,7 @@
   justify-content: center;
   column-gap: 1.5rem;
   margin-bottom: var(--mb-2);
+  flex-wrap: wrap;
 }
 
 .footer__social {

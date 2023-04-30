@@ -19,6 +19,14 @@ const button = [
   {
     title: 'Portfolio',
     id: '#portfolio'
+  },
+  {
+    title: 'Contact',
+    id: '#contact'
+  },
+  {
+    title: 'Certificate',
+    id: '#certificate'
   }
 ]
 const copyright = ' Gan[Z]. All rights reserved'

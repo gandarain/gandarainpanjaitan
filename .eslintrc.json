@@ -37,6 +37,7 @@
           "!baz-module/good"
         ]
       }
-    ]
+    ],
+    "no-console": "error"
   }
 }

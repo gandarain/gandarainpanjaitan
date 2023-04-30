@@ -6,11 +6,11 @@
   /* Colors */
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --title-color: #EDEDED;
+  --title-color-dark: #00ABF0;
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --body-color: #081B29;
+  --container-color: #081B29;
 
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
@@ -225,7 +225,7 @@ img {
 /* Button */
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--title-color-dark);
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;

@@ -5,6 +5,7 @@
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--container-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .nav {
@@ -31,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   font-size: var(--small-font-size);
-  color: var(--font-medium);
+  color: var(--title-color);
   transition: .3s;
 }
 

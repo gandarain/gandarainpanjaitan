@@ -83,7 +83,7 @@
   height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.3);
   background: none;
-  color: var(--text-color);
+  color: var(--title-color);
   outline: none;
   border-radius: 0.75rem;
   padding: 1.5rem;

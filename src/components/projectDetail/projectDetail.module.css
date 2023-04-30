@@ -37,6 +37,7 @@
 .project__detail__modal__title,
 .project__detail__modal__description {
   text-align: center;
+  color: var(--title-color);
 }
 
 .project__detail__modal__title {
@@ -56,6 +57,7 @@
   display: flex;
   align-items: center;
   column-gap: .5rem;
+  color: var(--title-color);
 }
 
 .project__detail__modal__icon {
@@ -72,6 +74,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  color: var(--title-color);
 }
 
 .project__detail__link {
@@ -83,6 +86,10 @@
   font-size: var(--small-font-size);
   color: var(--title-color);
   margin-left: var(--mb-1);
+}
+
+.project__detail__link__item:hover {
+  color: var(--title-color-dark);
 }
 
 /* Breakpoints */

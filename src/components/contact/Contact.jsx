@@ -93,7 +93,7 @@ const Contact = ({ setEmailResult }) => {
                 className={styles.contact__form__input}
                 placeholder="Insert your name"
                 required
-                minlength={5}
+                minLength={5}
               />
             </div>
             <div className={styles.contact__form__div}>
@@ -115,7 +115,7 @@ const Contact = ({ setEmailResult }) => {
                 rows="10"
                 placeholder="Write your job or project description"
                 required
-                minlength={10}
+                minLength={10}
               />
             </div>
             <button className="button button__flex">

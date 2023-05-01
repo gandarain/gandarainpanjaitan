@@ -7,6 +7,7 @@ import footer_content from './footer-content'
 import qualification_content from './qualification-content'
 import contact from './contact'
 import certificate_constant from './certificate-content'
+import publication_content from './publication_content'
 
 const constants = {
   header_menu,
@@ -17,7 +18,8 @@ const constants = {
   footer_content,
   qualification_content,
   contact,
-  certificate_constant
+  certificate_constant,
+  publication_content
 }
 
 export default constants

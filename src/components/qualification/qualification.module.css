@@ -16,10 +16,6 @@
   cursor: pointer;
 }
 
-.qualification__button:hover {
-  color: var(--title-color-dark);
-}
-
 .qualification__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);

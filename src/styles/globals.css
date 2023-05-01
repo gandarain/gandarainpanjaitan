@@ -11,6 +11,7 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: #081B29;
   --container-color: #081B29;
+  --black-color: rgba(0, 0, 0, 0.3);
 
   /* Font and typography */
   --body-font: "Poppins", sans-serif;

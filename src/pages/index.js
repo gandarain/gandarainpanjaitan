@@ -14,6 +14,7 @@ import ProjectDetail from '@/components/projectDetail/ProjectDetail'
 import Snackbar from '@/components/snackbar/Snackbar'
 import Certificate from '@/components/certificate/Certificate'
 import Publication from '@/components/publication/Publication'
+import Loader from '@/components/loader/Loader'
 
 const renderProjectDetail = ({ setShowProjectDetail, selectedProject }) => (
   <ProjectDetail
@@ -34,11 +35,21 @@ const usePortfolio = () => {
   }
 }
 
+const useLoading = () => {
+  const [showLoading, setShowLoading] = useState(false)
+
+  return {
+    showLoading,
+    setShowLoading
+  }
+}
+
 const Container = () => {
   const state = usePortfolio()
   const [emailResult, setEmailResult] = useState({
     status: false
   })
+  const {showLoading, setShowLoading} = useLoading()
 
   return (
     <>
@@ -52,8 +63,13 @@ const Container = () => {
           <Portfolio {...state} />
           <Certificate />
           <Publication />
-          <Contact emailResult={emailResult} setEmailResult={setEmailResult} />
+          <Contact
+            emailResult={emailResult}
+            setEmailResult={setEmailResult}
+            setShowLoading={setShowLoading}
+          />
           <Footer />
+          {showLoading && <Loader />}
         </main>
         {state.showProjectDetail && renderProjectDetail(state)}
         {emailResult.status && <Snackbar {...emailResult} onClose={() => setEmailResult({ status: false })} />}

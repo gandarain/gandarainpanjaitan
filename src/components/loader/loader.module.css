@@ -1,0 +1,66 @@
+.loader__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+
+.loader__content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.loader {
+  border: 16px solid var(--text-color);
+  border-top: 16px solid var(--title-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* Breakpoints */
+@media screen and (max-width: 576px) {
+  .loader__content {
+    padding: 1rem 1rem;
+  }
+}
+
+/* For small device */
+@media screen and (max-width: 350px) {
+  .loader__content {
+    padding: 1rem 1rem;
+  }
+}

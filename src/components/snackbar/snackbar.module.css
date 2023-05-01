@@ -22,7 +22,6 @@
   background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
-  overflow-y: scroll;
 }
 
 .snackbar__detail__modal__close {

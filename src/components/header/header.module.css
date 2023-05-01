@@ -4,8 +4,8 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--container-color);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
 }
 
 .nav {
@@ -65,7 +65,7 @@
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px var(--black-color);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }

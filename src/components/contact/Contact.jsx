@@ -41,16 +41,18 @@ const renderContactInfo = () => (
   ))
 )
 
-const Contact = ({ setEmailResult }) => {
+const Contact = ({ setEmailResult, setShowLoading }) => {
   const form = useRef()
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
 
   const sendEmail = async (e) => {
+    setShowLoading(true)
     e.preventDefault()
 
     try {
       await emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
+      setShowLoading(false)
       setEmailResult({
         status: true,
         title: 'Success',
@@ -58,6 +60,7 @@ const Contact = ({ setEmailResult }) => {
       })
       form.current.reset()
     } catch (error) {
+      setShowLoading(false)
       setEmailResult({
         status: true,
         title: 'Failed',

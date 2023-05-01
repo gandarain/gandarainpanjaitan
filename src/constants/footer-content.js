@@ -27,6 +27,10 @@ const button = [
   {
     title: 'Certificate',
     id: '#certificate'
+  },
+  {
+    title: 'Publication',
+    id: '#publication'
   }
 ]
 const copyright = ' Gan[Z]. All rights reserved'

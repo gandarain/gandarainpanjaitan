@@ -34,6 +34,12 @@ const content_header = [
     text: 'Certificate',
     icon: 'file-alt',
     id: 'certificate'
+  },
+  {
+
+    text: 'Publication',
+    icon: 'scenery',
+    id: 'publication'
   }
 ]
 

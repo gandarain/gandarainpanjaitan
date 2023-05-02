@@ -6,13 +6,13 @@
   /* Colors */
   --hue: 0;
   --sat: 0%;
-  --title-color: #EDEDED;
-  --title-color-dark: #00ABF0;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: #081B29;
-  --container-color: #081B29;
-  --black-color: rgba(0, 0, 0, 0.3);
-  --selected-header: #00ABF0;
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+  --black-color: #EDEDED;
+  --selected-header: hsl(var(--hue), var(--sat), 46%);
 
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
@@ -85,13 +85,13 @@
   /* Colors */
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --title-color: #EDEDED;
+  --title-color-dark: #00ABF0;
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
-  --black-color: #EDEDED;
-  --selected-header: hsl(var(--hue), var(--sat), 46%);
+  --body-color: #081B29;
+  --container-color: #081B29;
+  --black-color: rgba(0, 0, 0, 0.3);
+  --selected-header: #00ABF0;
 }
 
 @media (prefers-color-scheme: dark) {

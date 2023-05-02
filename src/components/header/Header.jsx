@@ -8,7 +8,13 @@ import actions from '@/context/actions'
 import styles from './header.module.css'
 
 const { AnimationOnScrollView } = hooks
-const { header_menu } = constants
+const {
+  header_menu,
+  theme: {
+    LIGHT,
+    DARK
+  }
+} = constants
 const { SET_ACTIVE_INDEX } = actions
 
 const Header = () => {
@@ -76,15 +82,15 @@ const Header = () => {
     return (
       <button
         onClick={() => {
-          if (theme === 'light') setTheme('dark')
-          else setTheme('light')
+          if (theme === LIGHT) setTheme(DARK)
+          else setTheme(LIGHT)
         }}
         className={styles.theme__button}
       >
         {
-          theme === 'light' ?
-          <i className="bx bxs-moon" style={{ fontSize: 24 }} /> : 
-          <i className="bx bx-moon" style={{ fontSize: 24 }} />
+          theme === LIGHT ?
+          <i className={`bx bx-moon ${styles.button__theme}`} /> : 
+          <i className={`bx bxs-moon ${styles.button__theme}`} />
         }
       </button >
     )

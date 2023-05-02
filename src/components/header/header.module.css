@@ -57,6 +57,10 @@
   color: var(--selected-header);
 }
 
+.button__theme {
+  font-size: var(--h3-font-size);
+}
+
 /* For medium device */
 @media screen and (max-width: 768px) {
   .header {

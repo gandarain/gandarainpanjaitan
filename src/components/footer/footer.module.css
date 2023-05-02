@@ -23,7 +23,7 @@
 
 .active__footer__link,
 .footer__link:hover {
-  color: var(--title-color-dark);
+  color: var(--selected-header);
 }
 
 .footer__list {

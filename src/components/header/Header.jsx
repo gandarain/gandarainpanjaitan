@@ -1,4 +1,5 @@
-import React, { useState, useContext, useRef } from 'react'
+import React, { useState, useContext, useRef, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 
 import { Context } from '../../context'
 import constants from '@/constants'
@@ -15,6 +16,10 @@ const Header = () => {
   const { state, dispatch } = useContext(Context)
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
+  const { theme, setTheme } = useTheme()
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => setHasMounted(true))
 
   const menuStyle = () => (
     toggle ? `${styles.nav__menu} ${styles.show__menu}` : styles.nav__menu
@@ -65,10 +70,33 @@ const Header = () => {
     </div>
   )
 
+  const renderThemeToggler = () => {
+    if (!hasMounted) return null
+
+    return (
+      <button
+        onClick={() => {
+          if (theme === 'light') setTheme('dark')
+          else setTheme('light')
+        }}
+        className={styles.theme__button}
+      >
+        {
+          theme === 'light' ?
+          <i className="bx bxs-moon" style={{ fontSize: 24 }} /> : 
+          <i className="bx bx-moon" style={{ fontSize: 24 }} />
+        }
+      </button >
+    )
+  }
+
   const renderName = () => (
-    <a href="index.html" className={styles.nav__logo}>
-      {header_menu.name}
-    </a>
+    <>
+      <a href="index.html" className={styles.nav__logo}>
+        {header_menu.name}
+      </a>
+      {renderThemeToggler()}
+    </>
   )
 
   const renderNav = () => (

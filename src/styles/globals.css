@@ -12,6 +12,7 @@
   --body-color: #081B29;
   --container-color: #081B29;
   --black-color: rgba(0, 0, 0, 0.3);
+  --selected-header: #00ABF0;
 
   /* Font and typography */
   --body-font: "Poppins", sans-serif;
@@ -78,6 +79,19 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+[data-theme='dark'] {
+  /* Colors */
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+  --black-color: #EDEDED;
+  --selected-header: hsl(var(--hue), var(--sat), 46%);
 }
 
 @media (prefers-color-scheme: dark) {

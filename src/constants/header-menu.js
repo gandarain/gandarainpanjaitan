@@ -26,20 +26,20 @@ const content_header = [
     id: 'portfolio'
   },
   {
-    text: 'Contact',
-    icon: 'message',
-    id: 'contact'
-  },
-  {
     text: 'Certificate',
-    icon: 'file-alt',
+    icon: 'copy',
     id: 'certificate'
   },
   {
 
     text: 'Publication',
-    icon: 'scenery',
+    icon: 'file',
     id: 'publication'
+  },
+  {
+    text: 'Contact',
+    icon: 'message',
+    id: 'contact'
   }
 ]
 

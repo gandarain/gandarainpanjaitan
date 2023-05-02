@@ -21,16 +21,16 @@ const button = [
     id: '#portfolio'
   },
   {
-    title: 'Contact',
-    id: '#contact'
-  },
-  {
     title: 'Certificate',
     id: '#certificate'
   },
   {
     title: 'Publication',
     id: '#publication'
+  },
+  {
+    title: 'Contact',
+    id: '#contact'
   }
 ]
 const copyright = ' Gan[Z]. All rights reserved'

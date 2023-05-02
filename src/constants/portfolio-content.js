@@ -49,7 +49,8 @@ const portfolio_item = [
         title: 'Website'
       }
     ],
-    filterId: 1
+    filterId: 1,
+    position: 'Freelance - Web Developer'
   },
   {
     id: 2,
@@ -105,7 +106,8 @@ const portfolio_item = [
         title: 'Google Play Store'
       }
     ],
-    filterId: 1
+    filterId: 1,
+    position: 'Frontend Developer'
   },
   {
     id: 3,
@@ -127,7 +129,8 @@ const portfolio_item = [
         title: 'Website'
       }
     ],
-    filterId: 1
+    filterId: 1,
+    position: 'Freelance - Frontend Developer'
   },
   {
     id: 4,
@@ -185,7 +188,8 @@ const portfolio_item = [
         title: 'Website'
       }
     ],
-    filterId: 1
+    filterId: 1,
+    position: 'Mobile Engineer'
   },
   {
     id: 5,
@@ -216,7 +220,8 @@ const portfolio_item = [
       }
     ],
     result: [],
-    filterId: 1
+    filterId: 1,
+    position: 'Freelance - Frontend Developer'
   },
   {
     id: 6,
@@ -258,7 +263,8 @@ const portfolio_item = [
         title: 'Google Play Store'
       }
     ],
-    filterId: 1
+    filterId: 1,
+    position: 'Freelance - Frontend Developer'
   },
   {
     id: 7,
@@ -289,7 +295,8 @@ const portfolio_item = [
       }
     ],
     result: [],
-    filterId: 1
+    filterId: 1,
+    position: 'Freelance - Frontend Developer'
   },
   {
     id: 8,
@@ -337,7 +344,7 @@ const portfolio_item = [
         title: 'Github'
       }
     ],
-    filterId: 2
+    filterId: 2,
   },
   {
     id: 9,

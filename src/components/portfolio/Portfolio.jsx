@@ -43,6 +43,7 @@ const renderWorkItem = ({ setShowProjectDetail, setSelectedProject}, selectedFil
         <div>
           <h3 className={styles.portfolio__title}>{item.title}</h3>
           <h3 className={styles.portfolio__title}>{item.category}</h3>
+          {item.position !== null && <h5 className={styles.portfolio__title}>{item.position}</h5>}
           <a
             className={styles.portfolio__button}
             onClick={() => {

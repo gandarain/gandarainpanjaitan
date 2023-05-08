@@ -68,7 +68,15 @@ const renderQualificationList = ({ qualificationList }) => (
         {index % 2 === 1 ? leftBorder() : null}
         <div>
           <h3 className={styles.qualification__title}>{item.title}</h3>
-          <span className={styles.qualification__subtitle}>{item.subtitle}</span>
+          <span
+            onClick={(e) => {
+              e.preventDefault()
+              window.open(item.link)
+            }}
+            className={styles.qualification__subtitle}
+          >
+            {item.subtitle}
+          </span>
           <div className={styles.qualification__calendar}>
             <i className="uil uil-calendar-alt" /> {item.date}
           </div>

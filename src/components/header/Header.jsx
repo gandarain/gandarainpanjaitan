@@ -98,7 +98,7 @@ const Header = () => {
 
   const renderName = () => (
     <>
-      <a href="index.html" className={styles.nav__logo}>
+      <a href="https://www.gandarainpanjaitan.com/" className={styles.nav__logo}>
         {header_menu.name}
       </a>
       {renderThemeToggler()}

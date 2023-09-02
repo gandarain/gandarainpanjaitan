@@ -2,15 +2,15 @@ const title = 'Qualification'
 const subtitle = 'My personal journey'
 const qualification_tabs = [
   {
+    id: 2,
+    title: 'Experience',
+    icon: 'uil-briefcase-alt'
+  },
+  {
     id: 1,
     title: 'Education',
     icon: 'uil-graduation-cap'
   },
-  {
-    id: 2,
-    title: 'Experience',
-    icon: 'uil-briefcase-alt'
-  }
 ]
 const qualification_list = [
   {

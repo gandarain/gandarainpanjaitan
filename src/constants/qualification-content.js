@@ -32,13 +32,21 @@ const qualification_list = [
   {
     id: 3,
     qualification_id: 2,
-    title: 'Software Developer',
-    subtitle: 'PT Code Development Indonesia - Jenius BTPN',
-    date: 'May 2021 - Present',
-    link: 'https://www.code.id/'
+    title: 'Digital Banking Solution Developer',
+    subtitle: 'PT Bank BTPN Tbk',
+    date: 'Nov 2023 - Present',
+    link: 'https://id.linkedin.com/company/pt-bank-btpn-tbk'
   },
   {
     id: 4,
+    qualification_id: 2,
+    title: 'Software Developer',
+    subtitle: 'PT Code Development Indonesia - Jenius BTPN',
+    date: 'May 2021 - Nv 2023',
+    link: 'https://www.code.id/'
+  },
+  {
+    id: 5,
     qualification_id: 2,
     title: 'Mobile Engineer',
     subtitle: 'PT Halo Komunkasi Sejahtera',
@@ -46,7 +54,7 @@ const qualification_list = [
     link: 'https://halojasa.com/'
   },
   {
-    id: 5,
+    id: 6,
     qualification_id: 2,
     title: 'Programmer',
     subtitle: 'PT Sistem Terintegrasi Inti Anugerah',
@@ -54,7 +62,7 @@ const qualification_list = [
     link: 'http://w3.stiasoftware.com/pages/'
   },
   {
-    id: 6,
+    id: 7,
     qualification_id: 2,
     title: 'Research - Intern',
     subtitle: 'Indonesian Institute Of Sciences',

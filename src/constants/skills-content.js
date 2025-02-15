@@ -21,7 +21,7 @@ const programming = {
       level: 'Intermediate'
     },
     {
-      title: 'React',
+      title: 'React JS',
       level: 'Expert'
     },
     {

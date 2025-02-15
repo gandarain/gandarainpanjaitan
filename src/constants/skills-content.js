@@ -5,7 +5,7 @@ const programming = {
   title: 'Programming Language & Framework',
   items: [
     {
-      title: 'JavaScript and TypeScript',
+      title: 'JavaScript',
       level: 'Expert'
     },
     {
@@ -61,6 +61,14 @@ const tools = {
     {
       title: 'Git',
       level: 'Expert'
+    },
+    {
+      title: 'Android Studio',
+      level: 'Intermediate'
+    },
+    {
+      title: 'Xcode',
+      level: 'Intermediate'
     }
   ]
 }

@@ -76,8 +76,7 @@ jobs:
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
-      # Pastikan menggunakan upload-pages-artifact@v2, BUKAN upload-artifact@v3
-      - name: Upload artifact
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./out

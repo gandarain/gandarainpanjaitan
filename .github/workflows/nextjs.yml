@@ -42,7 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"  # Update Node.js ke versi 18/20
+          node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
@@ -76,6 +76,7 @@ jobs:
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
+      # Pastikan menggunakan upload-pages-artifact@v2, BUKAN upload-artifact@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -90,4 +91,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3  # Update ke v3 (opsional)
+        uses: actions/deploy-pages@v3

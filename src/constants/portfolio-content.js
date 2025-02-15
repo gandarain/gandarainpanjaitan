@@ -6,11 +6,51 @@ import Work5 from '../../public/work/work5.png'
 import Work6 from '../../public/work/work6.jpeg'
 import Work7 from '../../public/work/work7.jpg'
 import Work8 from '../../public/work/work8.png'
+import Work9 from '../../public/work/work9.webp'
 
 const title = 'Portfolio'
 const subtitle = 'Most recent work'
 
 const portfolio_item = [
+  {
+    id: 10,
+    image: Work9,
+    title: 'Jenius Daya',
+    category: 'Mobile Application',
+    description: 'Develop Jenius Daya mobile banking application with React Native',
+    info: [
+      {
+        id: 1,
+        title: 'Responsible for creating code that complies with code convention (unit test 100%, lint and TypeScript)'
+      },
+      {
+        id: 2,
+        title: 'Implement GraphQL service as a gateway'
+      },
+      {
+        id: 3,
+        title: 'Create and enhance Jenius Daya ui-kit'
+      },
+      {
+        id: 4,
+        title: 'Contribute to documentation, discussion, and code review'
+      },
+      {
+        id: 5,
+        title: 'Cross-collaboration with other teams to make sure the feature that we developed is working smoothly'
+      }
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bxl-google',
+        link: 'https://play.google.com/store/apps/details?id=com.btpn.rlb&hl=id',
+        title: 'Google Play Store'
+      }
+    ],
+    filterId: 1,
+    position: 'Frontend Developer'
+  },
   {
     id: 1,
     image: Work7,
@@ -57,7 +97,7 @@ const portfolio_item = [
     image: Work1,
     title: 'Jenius',
     category: 'Mobile & Website Application',
-    description: 'Develop Jenius mobile banking application for credit card team with React Native and Jenius admin dashboard with React Js',
+    description: 'Develop Jenius mobile banking application for credit card team with React Native and Jenius admin dashboard with React JS',
     info: [
       {
         id: 1,

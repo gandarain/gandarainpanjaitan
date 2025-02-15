@@ -5,7 +5,11 @@ const programming = {
   title: 'Programming Language & Framework',
   items: [
     {
-      title: 'JavaScript',
+      title: 'JavaScript and TypeScript',
+      level: 'Expert'
+    },
+    {
+      title: 'TypeScript',
       level: 'Expert'
     },
     {

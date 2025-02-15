@@ -13,7 +13,7 @@ const renderSkillItem = (skill) => (
 )
 
 const renderSkillsGroup = (items) => {
-  const chunkSize = 3
+  const chunkSize = 4
   const result = []
 
   for (let index = 0; index < items.length; index+=chunkSize) {

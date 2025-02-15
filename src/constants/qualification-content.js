@@ -33,9 +33,9 @@ const qualification_list = [
     id: 3,
     qualification_id: 2,
     title: 'Digital Banking Solution Developer',
-    subtitle: 'PT Bank BTPN Tbk',
+    subtitle: 'PT Bank SMBC Indonesia Tbk',
     date: 'Nov 2023 - Present',
-    link: 'https://id.linkedin.com/company/pt-bank-btpn-tbk'
+    link: 'https://www.smbci.com/'
   },
   {
     id: 4,

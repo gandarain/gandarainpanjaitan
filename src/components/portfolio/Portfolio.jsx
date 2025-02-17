@@ -15,7 +15,7 @@ const {
     portfolio_filter
   },
   theme: {
-    DARK
+    LIGHT
   }
 } = constants
 
@@ -40,7 +40,7 @@ const renderWorkItem = ({ setShowProjectDetail, setSelectedProject}, selectedFil
     {portfolio_item.filter(item => item.filterId === selectedFilter).map(item => (
       <div className={styles.portfolio__card} key={item.id}>
         <Image
-          src={theme === DARK ? item.imageDarkMode : item.image}
+          src={theme === LIGHT ? item.image : item.imageDarkMode}
           alt="portfolio_image"
           className={styles.portfolio__image}
         />

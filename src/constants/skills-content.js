@@ -25,6 +25,10 @@ const programming = {
       level: 'Expert'
     },
     {
+      title: 'Core UI',
+      level: 'Expert'
+    },
+    {
       title: 'Node JS',
       level: 'Intermediate'
     },

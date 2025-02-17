@@ -9,11 +9,44 @@ import Work8 from '../../public/work/work8.png'
 import Work9 from '../../public/work/work9.webp'
 import Work10 from '../../public/work/work10.png'
 import Work10Dark from '../../public/work/work10-dark.png'
+import Work11 from '../../public/work/work11.webp'
 
 const title = 'Portfolio'
 const subtitle = 'Most recent work'
 
 const portfolio_item = [
+  {
+    id: 12,
+    image: Work11,
+    imageDarkMode: Work11,
+    title: 'Pemol',
+    category: 'Mobile Application',
+    description: 'Develop Pemol mobile application with Flutter',
+    info: [
+      {
+        id: 1,
+        title: 'Take an active role in discussing and providing suggestions regarding Pemol mobile app development'
+      },
+      {
+        id: 2,
+        title: 'Colaborate with Back End Developer'
+      },
+      {
+        id: 3,
+        title: 'Fixing bugs and maintain Pemol Mobile app'
+      },
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bxl-google',
+        link: 'https://play.google.com/store/apps/details?id=com.tdb.pemol.pemol&hl=id',
+        title: 'Google Play Store'
+      }
+    ],
+    filterId: 1,
+    position: 'Freelance Frontend Developer'
+  },
   {
     id: 11,
     image: Work10,

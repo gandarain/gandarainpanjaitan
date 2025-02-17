@@ -1,17 +1,17 @@
 const title = 'About Me'
 const subtitle = 'My Introduction'
-const description = 'Highly motivated Software Engineer Frontend with 4 years experience develop and maintain mobile and website application'
+const description = 'Highly motivated Software Engineer Frontend with 5 years experience develop and maintain mobile and website application'
 const button_cv = 'Download CV'
 
 const info = [
   {
     title: 'Experience',
-    description: '4 Years Working',
+    description: '5 Years Working',
     icon: 'award'
   },
   {
     title: 'Completed',
-    description: '6 + Projects',
+    description: '5+ Projects',
     icon: 'briefcase-alt'
   },
   {

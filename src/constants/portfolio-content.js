@@ -7,14 +7,49 @@ import Work6 from '../../public/work/work6.jpeg'
 import Work7 from '../../public/work/work7.jpg'
 import Work8 from '../../public/work/work8.png'
 import Work9 from '../../public/work/work9.webp'
+import Work10 from '../../public/work/work10.png'
+import Work10Dark from '../../public/work/work10-dark.png'
 
 const title = 'Portfolio'
 const subtitle = 'Most recent work'
 
 const portfolio_item = [
   {
+    id: 11,
+    image: Work10,
+    imageDarkMode: Work10Dark,
+    title: 'Pemol Admin Dashboard',
+    category: 'Website Application',
+    description: 'Develop Pemol admin dashboard website application with Core UI + React JS',
+    info: [
+      {
+        id: 1,
+        title: 'Take an active role in discussing and providing suggestions regarding admin dashboard development'
+      },
+      {
+        id: 2,
+        title: 'Init and setup project with Core UI and React JS'
+      },
+      {
+        id: 3,
+        title: 'Implement Axios to communicate with Backend'
+      },
+    ],
+    result: [
+      {
+        id: 1,
+        icon: 'bx-link',
+        link: 'https://pemol.tdbangarna.com/#/login',
+        title: 'Website'
+      }
+    ],
+    filterId: 1,
+    position: 'Freelance Frontend Developer'
+  },
+  {
     id: 10,
     image: Work9,
+    imageDarkMode: Work9,
     title: 'Jenius Daya',
     category: 'Mobile Application',
     description: 'Develop Jenius Daya mobile banking application with React Native',
@@ -54,6 +89,7 @@ const portfolio_item = [
   {
     id: 1,
     image: Work7,
+    imageDarkMode: Work7,
     title: 'CV Putra Indah Karya',
     category: 'Website Application',
     description: 'Develop landing page website application for CV Putra Indah Karya with Next JS and Reactstrap',
@@ -95,6 +131,7 @@ const portfolio_item = [
   {
     id: 2,
     image: Work1,
+    imageDarkMode: Work1,
     title: 'Jenius',
     category: 'Mobile & Website Application',
     description: 'Develop Jenius mobile banking application for credit card team with React Native and Jenius admin dashboard with React JS',
@@ -152,6 +189,7 @@ const portfolio_item = [
   {
     id: 3,
     image: Work2,
+    imageDarkMode: Work2,
     title: 'Prixa.ai',
     category: 'Website Application',
     description: 'Develop website for health consultation with Vue JS and migrate Rest API to Graphql with React Apollo',
@@ -175,6 +213,7 @@ const portfolio_item = [
   {
     id: 4,
     image: Work3,
+    imageDarkMode: Work3,
     title: 'Halojasa',
     category: 'Mobile & Website Application',
     description: 'Develop mobile application for On Demand service with React Native, start from init, setup, until the product released to App Store and Google Play Store',
@@ -234,6 +273,7 @@ const portfolio_item = [
   {
     id: 5,
     image: Work4,
+    imageDarkMode: Work4,
     title: 'TAM Syariah',
     category: 'Mobile & Website Application',
     description: 'Private Repository - Develop mobile application for Sales to register their customer with React Native and Admin Dashboard with React JS and Core UI',
@@ -266,6 +306,7 @@ const portfolio_item = [
   {
     id: 6,
     image: Work5,
+    imageDarkMode: Work5,
     title: 'Sahabat Lawyer',
     category: 'Mobile & Website Application',
     description: 'Develop mobile application for Consultation with Lawyer with React Native and Admin Dashboard with React JS and Core UI',
@@ -309,6 +350,7 @@ const portfolio_item = [
   {
     id: 7,
     image: Work6,
+    imageDarkMode: Work6,
     title: 'Toko Insani',
     category: 'Mobile Application',
     description: 'Private Repository - Develop mobile application for E-Commerce Cooperative with React Native',
@@ -341,6 +383,7 @@ const portfolio_item = [
   {
     id: 8,
     image: Work8,
+    imageDarkMode: Work8,
     title: 'Github User',
     category: 'Android Application',
     description: 'Develop android application with kotlin for get Dicoding "Belajar Fundamental Aplikasi Android" Certificate',
@@ -389,6 +432,7 @@ const portfolio_item = [
   {
     id: 9,
     image: Work8,
+    imageDarkMode: Work8,
     title: 'Story App',
     category: 'Android Application',
     description: 'Develop android application with kotlin for get Dicoding "Belajar Fundamental Aplikasi Android" Certificate',

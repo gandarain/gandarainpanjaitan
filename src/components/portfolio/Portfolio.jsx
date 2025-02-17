@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 
 import constants from '../../constants'
 import hooks from '@/hooks'
@@ -12,6 +13,9 @@ const {
     subtitle,
     portfolio_item,
     portfolio_filter
+  },
+  theme: {
+    DARK
   }
 } = constants
 
@@ -31,12 +35,12 @@ const renderPortfolioFilter = ({ selectedFilter, setSelectedFilter }) => (
   </div>
 )
 
-const renderWorkItem = ({ setShowProjectDetail, setSelectedProject}, selectedFilter) => (
+const renderWorkItem = ({ setShowProjectDetail, setSelectedProject}, selectedFilter, theme) => (
   <div className={`${styles.portfolio__container} container grid`}>
     {portfolio_item.filter(item => item.filterId === selectedFilter).map(item => (
       <div className={styles.portfolio__card} key={item.id}>
         <Image
-          src={item.image}
+          src={theme === DARK ? item.imageDarkMode : item.image}
           alt="portfolio_image"
           className={styles.portfolio__image}
         />
@@ -63,6 +67,7 @@ const Portfolio = (props) => {
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
   const [selectedFilter, setSelectedFilter] = useState(1)
+  const { theme } = useTheme()
 
   return (
     <section
@@ -73,7 +78,7 @@ const Portfolio = (props) => {
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{subtitle}</span>
       {renderPortfolioFilter({selectedFilter, setSelectedFilter})}
-      {renderWorkItem(props, selectedFilter)}
+      {renderWorkItem(props, selectedFilter, theme)}
     </section>
   )
 }

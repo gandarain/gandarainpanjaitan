@@ -42,9 +42,13 @@
 }
 
 .about__description {
-  padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5);
   color: var(--title-color);
+  text-align: center;
+}
+
+.button__cv {
+  text-align: center;
 }
 
 /* Breakpoints */

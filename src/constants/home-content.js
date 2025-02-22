@@ -1,6 +1,6 @@
 const full_name = 'Ganda Rain Panjaitan'
 const title = 'Software Engineer Frontend'
-const description = 'Highly motivated Software Engineer Frontend with 5 years experience develop and maintain mobile and website application'
+const description = 'Digital Banking Solution FE Developer - PT Bank SMBC Indonesia TBK.'
 const button_hello = 'Say Hello'
 
 const social_media = [

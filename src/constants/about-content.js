@@ -1,6 +1,6 @@
 const title = 'About Me'
 const subtitle = 'Introduction'
-const description = 'Highly motivated Software Engineer Frontend with 5 years experience develop and maintain mobile and website application'
+const description = 'Highly motivated Software Engineer Frontend with 6 years experience develop and maintain mobile and website application'
 const button_cv = 'Download CV'
 
 const info = [

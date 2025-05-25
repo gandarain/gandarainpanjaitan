@@ -72,7 +72,7 @@ const portfolio_item = [
       {
         id: 1,
         icon: 'bx-link',
-        link: 'https://pemol.tdbangarna.com/#/login',
+        link: 'https://pos.pemol.tdbangarna.com/',
         title: 'Website'
       }
     ],

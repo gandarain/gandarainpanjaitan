@@ -25,6 +25,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme()
   const [hasMounted, setHasMounted] = useState(false)
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => setHasMounted(true))
 
   const menuStyle = () => (

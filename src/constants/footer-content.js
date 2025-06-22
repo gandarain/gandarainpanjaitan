@@ -29,6 +29,10 @@ const button = [
     id: '#publication'
   },
   {
+    title: 'Ebook',
+    id: '#eBook'
+  },
+  {
     title: 'Contact',
     id: '#contact'
   }

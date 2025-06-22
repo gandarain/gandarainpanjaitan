@@ -9,38 +9,38 @@ import Image from 'next/image'
 
 import constants from '../../constants'
 import hooks from '@/hooks'
-import styles from './publication.module.css'
+import styles from './eBook.module.css'
 
 const { AnimationOnScrollView } = hooks
 const {
-  publication_content: {
+  e_book_content: {
     title,
     description,
-    publication_item
+    e_book_item
   }
 } = constants
 
 const renderPublicationItem = () => (
-  publication_item.map(item => (
+  e_book_item.map(item => (
     <SwiperSlide key={item.id}>
-      <div className={styles.publication__card}>
+      <div className={styles.e__book__card}>
         <Image
           src={item.image}
           alt="portfolio_image"
-          className={styles.publication__image}
+          className={styles.e__book__image}
         />
-        <div className={styles.publication__sub__item}>
-          <h3 className={styles.publication__title}>{item.title}</h3>
-          <h3 className={styles.publication__title}>{item.subtitle}</h3>
+        <div className={styles.e__book__sub_item}>
+          <h3 className={styles.e_book__title}>{item.title}</h3>
+          <h3 className={styles.e_book__title}>{item.subtitle}</h3>
           <a
-            className={styles.publication__button}
+            className={styles.e_book__button}
               onClick={(e) => {
                 e.preventDefault()
                 window.open(item.link)
               }}
               target="_blank"
           >
-            Detail <i className={`bx bx-right-arrow-alt ${styles.publication__button__icon}`} />
+            Detail <i className={`bx bx-right-arrow-alt ${styles.e_book__button__icon}`} />
           </a>
         </div>
       </div>
@@ -48,15 +48,15 @@ const renderPublicationItem = () => (
   ))
 )
 
-const Publication = () => {
+const EBook = () => {
   const domRef = useRef()
   const { isVisible } = AnimationOnScrollView(domRef)
 
   return (
     <section
       ref={domRef}
-      className={`publication section ${isVisible ? 'appear' : ''}`}
-      id="publication"
+      className={`eBook section ${isVisible ? 'appear' : ''}`}
+      id="eBook"
     >
       <h2 className="section__title">{title}</h2>
       <span className="section__subtitle">{description}</span>
@@ -78,4 +78,4 @@ const Publication = () => {
   )
 }
 
-export default Publication
+export default EBook

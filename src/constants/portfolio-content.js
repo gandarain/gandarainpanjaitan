@@ -21,7 +21,7 @@ const portfolio_item = [
     imageDarkMode: Work11,
     title: 'Pemol',
     category: 'Mobile Application',
-    description: 'Develop Pemol mobile application with Flutter',
+    description: 'Develop Pemol mobile application with React Native',
     info: [
       {
         id: 1,
@@ -29,11 +29,15 @@ const portfolio_item = [
       },
       {
         id: 2,
+        title: 'Initiate and setup Pemol mobile app with React Native'
+      },
+      {
+        id: 3,
         title: 'Colaborate with Back End Developer'
       },
       {
         id: 3,
-        title: 'Fixing bugs and maintain Pemol Mobile app'
+        title: 'Develop all feature related to Pemol mobile app'
       },
     ],
     result: [

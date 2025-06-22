@@ -30,8 +30,8 @@ const renderCertificateItem = () => (
           className={styles.certificate__image}
         />
         <div className={styles.certificate__sub__item}>
-          <h3 className={styles.portfolio__title}>{item.title}</h3>
-          <h3 className={styles.portfolio__title}>{item.subtitle}</h3>
+          <h3 className={styles.certificate__title}>{item.title}</h3>
+          <h3 className={styles.certificate__title}>{item.subtitle}</h3>
           <a
             className={styles.certificate__button}
               onClick={(e) => {

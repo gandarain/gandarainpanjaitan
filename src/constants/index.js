@@ -8,6 +8,7 @@ import qualification_content from './qualification-content'
 import contact from './contact'
 import certificate_constant from './certificate-content'
 import publication_content from './publication_content'
+import e_book_content from './e-book-content'
 import theme from './theme'
 
 const constants = {
@@ -21,7 +22,8 @@ const constants = {
   contact,
   certificate_constant,
   publication_content,
-  theme
+  theme,
+  e_book_content
 }
 
 export default constants

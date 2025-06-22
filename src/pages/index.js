@@ -14,6 +14,7 @@ import ProjectDetail from '@/components/projectDetail/ProjectDetail'
 import Snackbar from '@/components/snackbar/Snackbar'
 import Certificate from '@/components/certificate/Certificate'
 import Publication from '@/components/publication/Publication'
+import EBook from '@/components/eBook/EBook'
 import Loader from '@/components/loader/Loader'
 
 const renderProjectDetail = ({ setShowProjectDetail, selectedProject }) => (
@@ -63,6 +64,7 @@ const Container = () => {
           <Portfolio {...state} />
           <Certificate />
           <Publication />
+          <EBook />
           <Contact
             emailResult={emailResult}
             setEmailResult={setEmailResult}

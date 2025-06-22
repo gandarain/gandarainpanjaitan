@@ -30,8 +30,8 @@ const renderPublicationItem = () => (
           className={styles.publication__image}
         />
         <div className={styles.publication__sub__item}>
-          <h3 className={styles.portfolio__title}>{item.title}</h3>
-          <h3 className={styles.portfolio__title}>{item.subtitle}</h3>
+          <h3 className={styles.publication__title}>{item.title}</h3>
+          <h3 className={styles.publication__title}>{item.subtitle}</h3>
           <a
             className={styles.publication__button}
               onClick={(e) => {

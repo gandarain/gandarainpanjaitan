@@ -37,6 +37,11 @@ const content_header = [
     id: 'publication'
   },
   {
+    text: 'Ebook',
+    icon: 'file',
+    id: 'eBook'
+  },
+  {
     text: 'Contact',
     icon: 'message',
     id: 'contact'

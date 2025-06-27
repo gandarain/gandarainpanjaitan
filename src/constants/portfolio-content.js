@@ -43,6 +43,12 @@ const portfolio_item = [
     result: [
       {
         id: 1,
+        icon: 'bxl-apple',
+        link: 'https://apps.apple.com/id/app/pemol-pilah-sampahmu/id6747411652',
+        title: 'App Store'
+      },
+      {
+        id: 2,
         icon: 'bxl-google',
         link: 'https://play.google.com/store/apps/details?id=com.tdb.pemol.pemol&hl=id',
         title: 'Google Play Store'

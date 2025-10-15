@@ -6,7 +6,7 @@ If you need to understand the style and deployment, please watch the tutorial vi
 
 ## Configuration
 
-- node: v16.20.2
+- node: v22.15.1
 - next: 13.2.4
 
 ## How to run
